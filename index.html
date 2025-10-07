@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-content container-fluid">
+      <div class="logo">The Cipher</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+      </nav>
+    </div>
+  </header>
+  <section class="contact-section">
+    <div class="overlay"></div>
+
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Fill out the form below and we’ll get back to you soon.</p>
+
+      <form id="contactForm" class="contact-form">
+        <div class="input-group">
+          <input type="text" id="name" required />
+          <label for="name">Full Name</label>
+        </div>
+
+        <div class="input-group">
+          <input type="email" id="email" required />
+          <label for="email">Email Address</label>
+        </div>
+
+        <div class="input-group">
+          <input type="text" id="subject" required />
+          <label for="subject">Subject</label>
+        </div>
+
+        <div class="input-group">
+          <textarea id="message" rows="5" required></textarea>
+          <label for="message">Message</label>
+        </div>
+
+        <button type="submit" id="submitBtn">
+          <span class="btn-text">Send Message</span>
+          <span class="spinner"></span>
+        </button>
+
+        <div id="statusMessage"></div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="footer-content container-fluid">
+      <p>&copy; 2025 The Cipher. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#">Facebook</a> |
+        <a href="#">Twitter</a> |
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
